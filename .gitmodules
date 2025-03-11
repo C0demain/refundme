@@ -1,0 +1,6 @@
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/C0demain/refundme-mobile
+[submodule "web"]
+	path = web
+	url = https://github.com/C0demain/refundme-web
