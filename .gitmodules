@@ -6,4 +6,4 @@
 	url = https://github.com/C0demain/refundme-web
 [submodule "backend"]
 	path = backend
-	url = https://github.com/C0demain/refundme-backend
+	url = https://github.com/C0demain/refundme-backend.git
