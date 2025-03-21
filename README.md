@@ -1,4 +1,4 @@
-# RefundMe
+![RefundMe](docs/banner-refundme.png)
 
 ## ❔ Explicação do projeto  
 
