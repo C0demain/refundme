@@ -33,11 +33,22 @@ O desafio é desenvolver um aplicativo móvel para o lançamento de reembolso de
 ## 🧰 Tecnologias utilizadas
 - [Next.js](https://nextjs.org)
 - [React](https://react.dev)
-- [Typescript](https://www.typescriptlang.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Node.js](https://nodejs.org)
+- [NestJS](https://nestjs.com)
+- [Supabase](https://supabase.com)
+- [AWS (Amazon Web Services)](https://aws.amazon.com)
+- [MongoDB](https://www.mongodb.com)
+- [Docker](https://www.docker.com)
+- [React Native](https://reactnative.dev)
+- [Expo](https://expo.dev)
+- [Chakra UI](https://chakra-ui.com)
+- [Tailwind CSS](https://tailwindcss.com)
   
 ## 🛠️ Outras Ferramentas utilizadas
 - [Trello](https://www.trello.com)
 - [Figma](https://www.figma.com)
+- [Canva](https://www.canva.com)
 
 ## 👨‍💻 Integrantes da Equipe
 
