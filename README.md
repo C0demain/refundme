@@ -52,7 +52,7 @@ O desafio é desenvolver um aplicativo móvel para o lançamento de reembolso de
 
 ## Workflow
 
-![Workflow](docs/workflow.png)
+![Workflow](docs/workflowAPI.png)
 
 ## 👨‍💻 Integrantes da Equipe
 
