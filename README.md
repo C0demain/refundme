@@ -11,6 +11,10 @@ O desafio é desenvolver um aplicativo móvel para o lançamento de reembolso de
 ➯ Acesse o backlog completo [aqui](https://cold-spice-64e.notion.site/12128f34d09580f5a685f331ad284884?v=12128f34d09581d790f6000c6fa5996d&pvs=4)
 -->
 
+# ➯ MVP Do Projeto
+- Clique na imagem para ser redirecionado e assistir ao vídeo mostrando os detalhes da aplicação:
+[![Assista ao vídeo](docs/mvp-refund-me.png)](https://drive.google.com/file/d/1fzje6NUxxtddj49go8ANruHhXGqANSoV/view?usp=sharing)
+
 ## 📋 Requisitos
 #### ➯ Funcionais
 | Nº do requisito | Requisito do Parceiro                                                                                                                         |
