@@ -1,76 +1,111 @@
 ![RefundMe](docs/banner-refundme.png)
 
-## ❔ Explicação do projeto  
+## ❔ Explicação do Projeto
 
-O desafio é desenvolver um aplicativo móvel para o lançamento de reembolso de despesas, garantindo praticidade e precisão no registro das informações. O aplicativo deve permitir que os usuários registrem suas despesas. Além disso, deve ser possível anexar comprovantes, inserir descrições e acompanhar o status de aprovação das solicitações. Se o valor estiver acima do limite, alertar o usuário.
-<!--
-## 👀 Demonstração do produto
-➯ [Vídeo de demonstração](https://youtu.be/D8LDeAe5Wgo)
+O projeto **RefundMe** foi desenvolvido como parte do desafio prático proposto pela empresa GSW Software para os alunos do 5º semestre do curso de Análise e Desenvolvimento de Sistemas da Fatec São José dos Campos.
 
-## 📄 Backlog
-➯ Acesse o backlog completo [aqui](https://cold-spice-64e.notion.site/12128f34d09580f5a685f331ad284884?v=12128f34d09581d790f6000c6fa5996d&pvs=4)
--->
+A proposta consiste em desenvolver um sistema completo de **reembolso corporativo**, onde funcionários possam registrar suas **solicitações de reembolso de despesas**, anexar comprovantes e acompanhar o status de aprovação. O sistema também conta com um painel administrativo exclusivo para gestores aprovarem ou rejeitarem as solicitações com base em regras pré-definidas, como **limites por projeto**.
 
-# ➯ MVP Do Projeto
-- Clique na imagem para ser redirecionado e assistir ao vídeo mostrando os detalhes da aplicação:
+Além da aplicação mobile, também foi desenvolvido um **backoffice web** e uma **API robusta** com deploy em nuvem.
+
+---
+
+## 🧩 Estrutura do Projeto
+
+O projeto foi dividido em **três repositórios independentes**, refletindo a arquitetura desacoplada da solução:
+
+| Repositório       | Descrição                                                                 |
+|-------------------|---------------------------------------------------------------------------|
+| `refundme-backend`    | API REST construída em NestJS, conectada ao MongoDB Atlas, com deploy em AWS. |
+| `refundme-web`    | Aplicação web administrativa desenvolvida em Next.js para usuários do tipo admin. |
+| `refundme-mobile` | Aplicativo mobile feito em React Native com Expo, voltado a funcionários.  |
+
+---
+
+## 🎯 MVP do Projeto
+
+Clique na imagem abaixo para ser redirecionado ao vídeo demonstrativo com todas as funcionalidades entregues:
+
 [![Assista ao vídeo](docs/mvp-refund-me.png)](https://drive.google.com/file/d/1fzje6NUxxtddj49go8ANruHhXGqANSoV/view?usp=sharing)
 
-## 📋 Requisitos
-#### ➯ Funcionais
-| Nº do requisito | Requisito do Parceiro                                                                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| RF1                 | Permitir o registro de despesas informando:<br> - Tipo de despesa<br> - Data da despesa<br> - Valor ou quantidade |
-| RF2                 | Permitir o anexo de comprovantes de despesa |
-| RF3                 | Permitir a inserção de uma descrição para a despesa |
-| RF4                 | Exibir alerta caso o valor da despesa esteja acima do limite permitido |
-| RF5                 | Permitir o acompanhamento do status de aprovação das solicitações de reembolso |
-| RF6                 | Integrar com o sistema corporativo para fornecer e receber os seguintes dados:<br> - Informações do solicitante (Nome, Centro de Custo, Projeto)<br> - Detalhes da despesa (Data, Valor, Quantidade, Descrição, Anexo)|
+## ✅ Funcionalidades Implementadas
 
-#### ➯ Não funcionais
-| Nº do Requisito | Requisito do Parceiro                                      |
-| ------------------- | ---------------------------------------------------------- |
-| RNF1                | Manual do Usuário |
-| RNF2                | Documentação API – Application Programming Interface|
-| RNF3                | Modelagem de Banco de Dados |
+### Mobile (Funcionário)
+- Autenticação com controle de acesso por perfil
+- Cadastro de solicitações de reembolso
+- Registro de despesas por valor ou quantidade
+- Anexar imagem como comprovante (via câmera ou galeria)
+- Validação e alerta de limite excedido
+- Visualização de projetos disponíveis
+- Acompanhamento do status da solicitação
 
+### Web (Administrador)
+- Autenticação exclusiva para administradores
+- Listagem e análise das solicitações
+- Visualização de despesas vinculadas
+- Aprovação ou rejeição de solicitações com controle de status
+- Cadastro, edição e exclusão de usuários
+- Gerenciamento de projetos e centros de custo
 
-## 🧰 Tecnologias utilizadas
-- [Next.js](https://nextjs.org)
-- [React](https://react.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Node.js](https://nodejs.org)
-- [NestJS](https://nestjs.com)
-- [Supabase](https://supabase.com)
-- [AWS (Amazon Web Services)](https://aws.amazon.com)
-- [MongoDB](https://www.mongodb.com)
-- [Docker](https://www.docker.com)
-- [React Native](https://reactnative.dev)
-- [Expo](https://expo.dev)
-- [Chakra UI](https://chakra-ui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-  
-## 🛠️ Outras Ferramentas utilizadas
-- [Trello](https://www.trello.com)
-- [Figma](https://www.figma.com)
-- [Canva](https://www.canva.com)
+### API (Backend)
+- Estrutura em NestJS com tipagem forte em TypeScript
+- Autenticação com JWT e controle de acesso
+- Upload de arquivos (comprovantes) via AWS S3
+- Modelagem relacional entre Projetos, Solicitações e Despesas
+- Deploy da aplicação em instância EC2
+- Banco de dados hospedado na nuvem com MongoDB Atlas
+- Documentação interativa da API com Swagger
+
+## 🧰 Tecnologias Utilizadas
+
+### 📱 Mobile
+- React Native + TypeScript
+- Expo
+- Gluestack UI
+- TailwindCSS
+
+### 💻 Web (Admin)
+- Next.js + React
+- Chakra UI
+- TailwindCSS
+- Redux Toolkit
+
+### 🌐 API
+- NestJS
+- Node.js + TypeScript
+- MongoDB + Mongoose
+- MongoDB Atlas
+- AWS S3 (armazenamento de imagens)
+- AWS EC2 (hospedagem da API)
+- Swagger (documentação da API)
+
+### 🧪 Testes e Outros
+- Postman (testes de API)
+- GitHub Projects (kanban e organização)
+- Trello (sprints e tarefas)
+- Figma (design das telas)
+- Canva (materiais visuais)
+
+## 🔀 Fluxo da Solução
+
+Um projeto pode conter múltiplas **solicitações de reembolso**, e cada solicitação pode conter múltiplas **despesas**. O fluxo completo envolve:
 
 ## Workflow
 
-![Workflow](docs/workflowAPI.png)
+![Workflow](docs/workflow.png)
 
 ## 👨‍💻 Integrantes da Equipe
 
-<div align="center">
-  
-|Nome|Função|GitHub|Linkedin|
-| -------- |-------- |-------- |-------- |
-|**Abner Machado**|Product Owner|[@GitHub](https://github.com/abnerdouglas)|[@Linkedin](https://www.linkedin.com/in/abner-douglas-a70a9b199/)
-|**Ryan Seiji Wakugawa**|Scrum Master|[@GitHub](https://github.com/ryan-wakugawa)|[@Linkedin](https://www.linkedin.com/in/ryan-wakugawa-526bbb27a)
-|**Bruno Silvério**|Desenvolvedor|[@GitHub](https://github.com/BrunoVieira30)|[@Linkedin](https://www.linkedin.com/in/bruno-vieira-b999a2224/)
-|**Cauã Dezidera**|Desenvolvedor|[@GitHub](https://github.com/CauaDezidera)|[@Linkedin](https://www.linkedin.com/in/cauã-dezidera-375736275/) 
-|**Mateus Madeira**|Desenvolvedor|[@GitHub](https://github.com/mafemad)|[@Linkedin](https://www.linkedin.com/in/mateus-ferreira-madeira)
-|**Pedro Kajiya**|Desenvolvedor|[@GitHub](https://github.com/kajiyap)|[@Linkedin](https://www.linkedin.com/in/pedro-santos-kajiya-65763b260/)
-|**Erick Hideki**|Desenvolvedor|[@GitHub](https://github.com/erickhoawata)|[@Linkedin](http://linkedin.com/in/érick-awata)
+| Nome                | Função           | GitHub                                                                 | LinkedIn                                                                 |
+|---------------------|------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Abner Machado**   | Product Owner    | [🌐 GitHub](https://github.com/abnerdouglas)                           | [🔗 LinkedIn](https://www.linkedin.com/in/abner-douglas-a70a9b199/)      |
+| **Ryan S. Wakugawa**| Scrum Master     | [🌐 GitHub](https://github.com/ryan-wakugawa)                          | [🔗 LinkedIn](https://www.linkedin.com/in/ryan-wakugawa-526bbb27a)       |
+| **Bruno Silvério**  | Desenvolvedor    | [🌐 GitHub](https://github.com/BrunoVieira30)                          | [🔗 LinkedIn](https://www.linkedin.com/in/bruno-vieira-b999a2224/)       |
+| **Cauã Dezidera**   | Desenvolvedor    | [🌐 GitHub](https://github.com/CauaDezidera)                           | [🔗 LinkedIn](https://www.linkedin.com/in/cauã-dezidera-375736275/)      |
+| **Mateus Madeira**  | Desenvolvedor    | [🌐 GitHub](https://github.com/mafemad)                                | [🔗 LinkedIn](https://www.linkedin.com/in/mateus-ferreira-madeira)       |
+| **Pedro Kajiya**    | Desenvolvedor    | [🌐 GitHub](https://github.com/kajiyap)                                | [🔗 LinkedIn](https://www.linkedin.com/in/pedro-santos-kajiya-65763b260/)|
+| **Erick Hideki**    | Desenvolvedor    | [🌐 GitHub](https://github.com/erickhoawata)                           | [🔗 LinkedIn](http://linkedin.com/in/érick-awata)                        |
+
 
 <br>  
   
