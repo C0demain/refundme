@@ -24,9 +24,15 @@ O projeto foi dividido em **três repositórios independentes**, refletindo a ar
 
 ## 🎯 MVP do Projeto
 
-Clique na imagem abaixo para ser redirecionado ao vídeo demonstrativo com todas as funcionalidades entregues:
+Clique nos links abaixo para ser redirecionado ao vídeo demonstrativo com todas as funcionalidades entregues:
 
-[![Assista ao vídeo](docs/mvp-refund-me.png)](https://drive.google.com/file/d/1fzje6NUxxtddj49go8ANruHhXGqANSoV/view?usp=sharing)
+### Versão Web:
+
+[Assista ao vídeo da versão WEB](https://drive.google.com/file/d/1M2Z-_GaFNL36fPYcajl-Kc_4Xe1xrJBu/view?usp=sharing)
+
+### Versão Mobile:
+
+[Assista ao vídeo da versão MOBILE](https://drive.google.com/file/d/1HBDjYvhVGboCoM4Exfvte7C8HXG5gqei/view?usp=sharing)
 
 ## ✅ Funcionalidades Implementadas
 
